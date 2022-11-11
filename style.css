@@ -1,0 +1,152 @@
+body {
+  background-color: hsl(219, 17%, 49%);
+  font-family: "Manrope";
+  font-weight: 800;
+}
+
+main {
+  width: 600px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 8px;
+}
+
+.search-icon {
+  width: 24px;
+  height: 24px;
+  flex: 1;
+}
+
+#input_div {
+  background-color: hsl(217, 19%, 24%);
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#user_search {
+  background-color: hsl(217, 19%, 24%);
+  border: none;
+  font-weight: bolder;
+  color: grey;
+  flex: 4;
+}
+
+#user_search:focus {
+  outline: none;
+}
+
+button {
+  background-color: #5050af;
+  border: none;
+  padding: 17px;
+  border-radius: 8px;
+  flex: 1;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+#display_info {
+  background-color: hsl(217, 19%, 24%);
+  border-radius: 8px;
+  display: flex;
+  padding: 30px;
+  gap: 50px;
+}
+
+#pfp {
+  width: 100px;
+  border-radius: 50px;
+}
+
+#name {
+  font-size: x-large;
+  color: white;
+}
+
+#username {
+  color: rgb(80, 80, 175);
+  font-size: medium;
+  padding: 5px 0;
+}
+
+#bio {
+  color: grey;
+  font-size: small;
+  margin-top: 10px;
+}
+
+#rff {
+  background-color: hsl(219, 17%, 49%);
+  border-radius: 8px;
+  display: flex;
+  margin-top: 20px;
+  padding: 15px;
+  justify-content: space-between;
+}
+
+#repos,
+#followers,
+#following {
+  text-align: center;
+  font-weight: bolder;
+}
+
+.rff_head {
+  color: hsl(217, 19%, 24%);
+}
+
+.rff_value {
+  color: white;
+}
+
+svg {
+  fill: white;
+}
+
+#others {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+#location,
+#twitter,
+#blog,
+#company {
+  display: flex;
+  flex: 1;
+  gap: 15px;
+  color: white;
+  font-size: small;
+  padding-left: 10px;
+  align-items: center;
+  padding: 10px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 450px) {
+  main {
+    width: 350px;
+  }
+
+  #pfp {
+    width: 50px;
+    border-radius: 25px;
+  }
+
+  #display_info {
+    display: block;
+  }
+}
