@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <title>GitHub User Search App</title>
+  </head>
+  <body>
+    <main>
+      <div id="input_div">
+        <svg
+          class="search-icon"
+          aria-labelledby="title desc"
+          role="img"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 19.9 19.7"
+        >
+          <g class="search-path" fill="none" stroke="#5050af">
+            <path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4" />
+            <circle cx="8" cy="8" r="7" />
+          </g>
+        </svg>
+        <input
+          id="user_search"
+          type="text"
+          placeholder="Enter GitHub username"
+        />
+        <button onclick="search()">Search</button>
+      </div>
+      <section id="display_info">
+        <div id="pfp_div"></div>
+        <div id="info_div">
+          <div>
+            <div id="name"></div>
+            <div id="join_date"></div>
+          </div>
+          <div id="username"></div>
+          <div id="bio"></div>
+          <div id="rff">
+            <div id="repos"></div>
+            <div id="followers"></div>
+            <div id="following"></div>
+          </div>
+          <div id="others">
+            <div id="location"></div>
+            <div id="twitter"></div>
+            <div id="blog"></div>
+            <div id="company"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
